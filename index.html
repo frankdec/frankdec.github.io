@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Useless fact</title>
+    <link rel="stylesheet" href="/index-78b00c8bb3d588cf.css" integrity="sha384-7TU3KEgbdt7v+uV1osMm76b5ZbC8IHNJ1l/NjV9/LTI6wrHNEDgVGz2S6ZlxRNsw"/>
+  <link rel="modulepreload" href="/yew-19394959577db23d.js" crossorigin="anonymous" integrity="sha384-rrq5/vOZpx8+VBh/bxlFXiKlv41BSV3SjXJ2LGsPd4Ti8Cazi0s7YoknljpAgEkO"><link rel="preload" href="/yew-19394959577db23d_bg.wasm" crossorigin="anonymous" integrity="sha384-gJShyNdLP8oWEYYZpECB0bThczXorKmKyOoLxToP9lpEtaBjsPF266LLz4yMD7sE" as="fetch" type="application/wasm"></head>
+  <body>
+<script type="module">
+import init, * as bindings from '/yew-19394959577db23d.js';
+const wasm = await init({ module_or_path: '/yew-19394959577db23d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
