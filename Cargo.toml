@@ -1,0 +1,12 @@
+[package]
+name = "website"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+opt-level = "s"
+lto = true
+
+[dependencies]
+bevy = { version = "0.18.1", default-features = false, features = ["2d"] }
+bevy_egui = "0.39.1"
