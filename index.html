@@ -1,46 +1,6 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.min.css"
-    />
-    <title>useless facts</title>
-    <style>
-      body {
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-color: #121212;
-      }
-      pre {
-        font-family: "Fira Code", monospace;
-        font-size: 16px;
-        margin: 0px;
-      }
-    </style>
-  <link rel="modulepreload" href="/game-e0753cb4755e43e6.js" crossorigin="anonymous" integrity="sha384-2PjqF+8CRmkRXBI/H+He/VuS+2Vp3ew5F06VI01RtoHipxIMGOuSRcQUs3JZKZE8"><link rel="preload" href="/game-e0753cb4755e43e6_bg.wasm" crossorigin="anonymous" integrity="sha384-Kp/ZXWgriF3pFpgZw/BKPFEO+Qom28F5yZ5wLwxp/up6pws9iD9cFpWHiOtI0/7+" as="fetch" type="application/wasm"></head>
-  <body>
-  
-<script type="module">
-import init, * as bindings from '/game-e0753cb4755e43e6.js';
-const wasm = await init({ module_or_path: '/game-e0753cb4755e43e6_bg.wasm' });
-
-
-window.wasmBindings = bindings;
-
-
-dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
-
-</script></body>
+    <link data-trunk rel="scss" href="./index.scss"/>
+    <link data-trunk rel="rust"/>
+  </head>
 </html>
