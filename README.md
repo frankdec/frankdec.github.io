@@ -1,2 +1,0 @@
-# frankdec.github.io
-website
