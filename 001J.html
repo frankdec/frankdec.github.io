@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title></title><link rel="icon" href="/assets/favicon.ico" /><template id="theme-option-template"><input type="radio" name="theme" /><label></label></template><script src="/main.js"></script><!-- Also see: https://katex.org/docs/autorender -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+<!-- Also see: https://github.com/KaTeX/KaTeX/tree/main/contrib/copy-tex -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/copy-tex.min.js" integrity="sha384-Pe2JWbaShhSRT0SESJ9XLPeAsi4yrNi7r/CiH0Coq7giBjK5a6Ae7XcybE8rNlQP" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      trust: true,
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script>
+<link rel="stylesheet" href="/main.css"><style>
+@media only screen and (min-width: 1000px) {
+  #grid-wrapper { grid-template-columns: var(--article-max-width) var(--toc-max-width); }
+  nav#toc { max-width: 45ex; }
+}
+</style><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+</head><body><header class="header"><nav class="nav"><div class="logo"><span class="cursor-pointer" onclick="window.location.href='/index.html'" title="My forest">« My forest</span></div></nav></header><div id="grid-wrapper" style="grid-template-areas: 'article toc';" data-base-url="/"><nav id="toc" class="sticky-nav mobile-sticky-nav"><div id="theme-options"></div></nav>
+
+<article><section class="block" data-taxon="Proposition"><details open><summary id="001J"><header><h1><span class="taxon">Proposition. </span> <a class="slug" href="/001J.html">[001J]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/model-theory.html" title="Model Theory [model-theory]">Model Theory</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></summary><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><p>If <span class="typst-inline" style="vertical-align: -0.0010000000000000345em;"><svg style="overflow: visible; width: 0.525em; height: 0.685em;" viewBox="0 0 5.775 7.535" width="5.775pt" height="7.535pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.524)"><use xlink:href="#g3591A391946C1E85A67A7EFBF3BF42D4" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="g3591A391946C1E85A67A7EFBF3BF42D4" overflow="visible"><path d="M 0 0m 5.467 7.337c 0 0.121 -0.066 0.176 -0.209 0.176l -1.419 -0.033l -1.441 0.033c -0.176 0.011 -0.264 -0.077 -0.264 -0.264c 0 -0.11 0.121 -0.165 0.352 -0.165c 0.473 0 0.704 -0.055 0.704 -0.154c 0 -0.055 -0.011 -0.11 -0.022 -0.165l -1.463 -5.863c -0.055 -0.242 -0.165 -0.385 -0.33 -0.44c -0.077 -0.022 -0.275 -0.033 -0.616 -0.033c -0.275 0 -0.385 -0.011 -0.385 -0.264c 0 -0.11 0.066 -0.165 0.209 -0.165l 1.408 0.033l 1.452 -0.033c 0.176 -0.011 0.264 0.077 0.264 0.253c 0 0.176 -0.132 0.176 -0.374 0.176c -0.429 0 -0.693 -0.022 -0.693 0.154c 0 0.055 0.011 0.132 0.044 0.242l 1.452 5.797c 0.055 0.231 0.165 0.374 0.33 0.429c 0.077 0.022 0.275 0.033 0.616 0.033c 0.264 0 0.385 0.011 0.385 0.253Z "/></symbol></defs></svg></span> is a family of <span class="link local"><a href="/001D.html" title="Partial isomorphism [001D]">partial isomorphisms</a></span> with <span class="link local"><a href="/001F.html" title="Back and forth [001F]">B&amp;F</a></span>, then every <span class="typst-inline" style="vertical-align: -0.205em;"><svg style="overflow: visible; width: 2.327555556em; height: 0.91em;" viewBox="0 0 25.603111111 10.01" width="25.603111111pt" height="10.01pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.755)"><use xlink:href="#g102A2C163EA38BFB64ACE307643314D7" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 9.435555556 7.755)"><use xlink:href="#g42B49FD2E65D3AC5A00C3F4D3BE40C8" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 19.828111111 7.755)"><use xlink:href="#g3591A391946C1E85A67A7EFBF3BF42D4" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="g102A2C163EA38BFB64ACE307643314D7" overflow="visible"><path d="M 0 0m 6.072 6.963c 0 0.484 -0.473 0.792 -0.99 0.792c -0.682 0 -1.155 -0.44 -1.408 -1.309c -0.055 -0.198 -0.176 -0.759 -0.352 -1.683h -0.715c -0.242 0 -0.363 -0.011 -0.363 -0.242c 0 -0.121 0.11 -0.176 0.341 -0.176h 0.66l -0.803 -4.257c -0.121 -0.627 -0.231 -1.089 -0.33 -1.397c -0.132 -0.407 -0.319 -0.616 -0.561 -0.616c -0.165 0 -0.297 0.044 -0.418 0.121c 0.352 0.055 0.528 0.264 0.528 0.616c 0 0.286 -0.143 0.429 -0.44 0.429c -0.374 0 -0.638 -0.33 -0.638 -0.704c 0 -0.484 0.451 -0.792 0.968 -0.792c 0.275 0 0.528 0.11 0.737 0.341c 0.352 0.363 0.627 0.88 0.825 1.573c 0.121 0.429 0.231 0.847 0.308 1.265l 0.638 3.421h 0.902c 0.253 0 0.363 0.011 0.363 0.264c 0 0.099 -0.11 0.154 -0.33 0.154h -0.847c 0.066 0.451 0.374 2.112 0.473 2.321c 0.11 0.231 0.264 0.341 0.462 0.341c 0.165 0 0.308 -0.044 0.429 -0.121c -0.341 -0.077 -0.517 -0.275 -0.517 -0.616c 0 -0.286 0.143 -0.429 0.44 -0.429c 0.374 0 0.638 0.33 0.638 0.704Z "/></symbol><symbol id="g42B49FD2E65D3AC5A00C3F4D3BE40C8" overflow="visible"><path d="M 0 0m 6.193 0.044h -2.09c -0.693 0 -1.309 0.231 -1.815 0.704c -0.506 0.473 -0.792 1.045 -0.858 1.738h 4.763c 0.176 0 0.264 0.088 0.264 0.264c 0 0.176 -0.088 0.264 -0.264 0.264h -4.763c 0.066 0.693 0.352 1.265 0.858 1.738c 0.506 0.473 1.122 0.704 1.815 0.704h 2.09c 0.176 0 0.264 0.088 0.264 0.253c 0 0.176 -0.088 0.264 -0.264 0.264h -2.09c -0.891 0 -1.65 -0.308 -2.277 -0.935c -0.627 -0.627 -0.935 -1.386 -0.935 -2.288c 0 -0.902 0.308 -1.661 0.935 -2.288c 0.627 -0.627 1.386 -0.935 2.277 -0.935h 2.09c 0.176 0 0.264 0.088 0.264 0.264c 0 0.132 -0.121 0.253 -0.264 0.253Z "/></symbol><symbol id="g3591A391946C1E85A67A7EFBF3BF42D4" overflow="visible"><path d="M 0 0m 5.467 7.337c 0 0.121 -0.066 0.176 -0.209 0.176l -1.419 -0.033l -1.441 0.033c -0.176 0.011 -0.264 -0.077 -0.264 -0.264c 0 -0.11 0.121 -0.165 0.352 -0.165c 0.473 0 0.704 -0.055 0.704 -0.154c 0 -0.055 -0.011 -0.11 -0.022 -0.165l -1.463 -5.863c -0.055 -0.242 -0.165 -0.385 -0.33 -0.44c -0.077 -0.022 -0.275 -0.033 -0.616 -0.033c -0.275 0 -0.385 -0.011 -0.385 -0.264c 0 -0.11 0.066 -0.165 0.209 -0.165l 1.408 0.033l 1.452 -0.033c 0.176 -0.011 0.264 0.077 0.264 0.253c 0 0.176 -0.132 0.176 -0.374 0.176c -0.429 0 -0.693 -0.022 -0.693 0.154c 0 0.055 0.011 0.132 0.044 0.242l 1.452 5.797c 0.055 0.231 0.165 0.374 0.33 0.429c 0.077 0.022 0.275 0.033 0.616 0.033c 0.264 0 0.385 0.011 0.385 0.253Z "/></symbol></defs></svg></span> is an <span class="link local"><a href="/001G.html" title="Elementary map [001G]">elementary map</a></span>.</p></body></details></section><footer></footer></article></div></body></html>

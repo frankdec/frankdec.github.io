@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title></title><link rel="icon" href="/assets/favicon.ico" /><template id="theme-option-template"><input type="radio" name="theme" /><label></label></template><script src="/main.js"></script><!-- Also see: https://katex.org/docs/autorender -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+<!-- Also see: https://github.com/KaTeX/KaTeX/tree/main/contrib/copy-tex -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/copy-tex.min.js" integrity="sha384-Pe2JWbaShhSRT0SESJ9XLPeAsi4yrNi7r/CiH0Coq7giBjK5a6Ae7XcybE8rNlQP" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      trust: true,
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script>
+<link rel="stylesheet" href="/main.css"><style>
+@media only screen and (min-width: 1000px) {
+  #grid-wrapper { grid-template-columns: var(--article-max-width) var(--toc-max-width); }
+  nav#toc { max-width: 45ex; }
+}
+</style><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+</head><body><header class="header"><nav class="nav"><div class="logo"><span class="cursor-pointer" onclick="window.location.href='/index.html'" title="My forest">« My forest</span></div></nav></header><div id="grid-wrapper" style="grid-template-areas: 'article toc';" data-base-url="/"><nav id="toc" class="sticky-nav mobile-sticky-nav"><div id="theme-options"></div></nav>
+
+<article><section class="block" data-taxon="Proposition"><details open><summary id="001K"><header><h1><span class="taxon">Proposition. </span> <a class="slug" href="/001K.html">[001K]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/model-theory.html" title="Model Theory [model-theory]">Model Theory</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></summary><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><p>If <span class="link local"><a href="/001D.html" title="Partial isomorphism [001D]"><span class="typst-inline" style="vertical-align: -0.455em;"><svg style="overflow: visible; width: 3.314555556em; height: 1.3828em;" viewBox="0 0 36.460111111 15.2108" width="36.460111111pt" height="15.2108pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.513)"><use xlink:href="#gC45012E9777FA5A123D693620FE7C717" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 14.847555556 7.513)"><use xlink:href="#gB150D675E02DD0F8B8E2617F2BC6E4D0" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 16.858905556 13.717)"><use xlink:href="#g25797FFA0598C48E72DEB9446A679DA2" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 26.461111111 7.513)"><use xlink:href="#g74095D2A60C48A9D512C1590D5CFCC34" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gC45012E9777FA5A123D693620FE7C717" overflow="visible"><path d="M 0 0m 6.534 0.176c 0 -0.121 0.066 -0.176 0.209 -0.176l 1.353 0.033c 0.253 0.011 1.144 -0.033 1.353 -0.033c 0.165 0 0.253 0.088 0.253 0.264c 0 0.11 -0.11 0.165 -0.341 0.165c -0.451 0 -0.671 0.044 -0.671 0.143c 0 0.033 0.022 0.11 0.055 0.253l 1.452 5.797c 0.055 0.231 0.165 0.374 0.308 0.429c 0.066 0.022 0.264 0.033 0.583 0.033c 0.275 0 0.396 0.011 0.396 0.264c 0 0.11 -0.11 0.165 -0.341 0.165h -1.441c -0.319 0 -0.319 -0.022 -0.462 -0.231l -3.916 -6.094l -0.836 6.039c -0.044 0.275 -0.066 0.286 -0.385 0.286h -1.496c -0.242 0 -0.363 -0.011 -0.363 -0.253c 0 -0.121 0.121 -0.176 0.352 -0.176c 0.22 0 0.671 0.033 0.671 -0.143c 0 -0.022 -0.011 -0.088 -0.044 -0.198l -1.386 -5.533c -0.099 -0.418 -0.352 -0.671 -0.737 -0.748c -0.275 -0.033 -0.638 0.011 -0.638 -0.286c 0 -0.121 0.066 -0.176 0.198 -0.176c 0.198 0 0.891 0.033 1.089 0.033c 0.209 0 0.913 -0.033 1.122 -0.033c 0.165 0 0.242 0.088 0.242 0.264c 0 0.099 -0.077 0.154 -0.242 0.165c -0.462 0 -0.693 0.143 -0.693 0.429c 0 0.044 0.011 0.121 0.044 0.242l 1.43 5.731l 0.913 -6.545c 0.033 -0.187 0.099 -0.286 0.209 -0.286c 0.088 0 0.176 0.077 0.275 0.22l 4.279 6.677l -1.496 -5.995c -0.066 -0.242 -0.176 -0.385 -0.341 -0.44c -0.066 -0.022 -0.275 -0.033 -0.616 -0.033c -0.231 0 -0.341 -0.022 -0.341 -0.253Z "/></symbol><symbol id="gB150D675E02DD0F8B8E2617F2BC6E4D0" overflow="visible"><path d="M 0 0m 7.92 5.874c 0 0.121 -0.055 0.187 -0.176 0.187c -0.11 0 -0.165 -0.055 -0.176 -0.154c -0.044 -0.451 -0.165 -0.792 -0.374 -1.034c -0.319 -0.385 -0.715 -0.572 -1.177 -0.572c -0.275 0 -0.638 0.154 -1.067 0.451l -1.144 0.858c -0.473 0.308 -0.913 0.462 -1.298 0.462c -0.154 0 -0.308 -0.022 -0.462 -0.066c -0.946 -0.275 -1.287 -1.001 -1.408 -2.167c 0 -0.121 0.055 -0.187 0.176 -0.187c 0.11 0 0.165 0.055 0.176 0.165c 0.044 0.451 0.165 0.792 0.374 1.034c 0.319 0.385 0.715 0.572 1.177 0.572c 0.275 0 0.638 -0.154 1.067 -0.462l 1.144 -0.858c 0.473 -0.308 0.913 -0.462 1.298 -0.462c 0.154 0 0.308 0.022 0.462 0.066c 0.935 0.275 1.287 1.001 1.408 2.167Z m -0.242 -2.86h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.253c 0 -0.176 0.088 -0.264 0.264 -0.264h 6.798c 0.176 0 0.264 0.088 0.264 0.264c 0 0.132 -0.121 0.253 -0.264 0.253Z m 0 -2.101h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.253c 0 -0.176 0.088 -0.264 0.264 -0.264h 6.798c 0.176 0 0.264 0.088 0.264 0.264c 0 0.132 -0.121 0.253 -0.264 0.253Z "/></symbol><symbol id="g25797FFA0598C48E72DEB9446A679DA2" overflow="visible"><path d="M 0 0m 3.1185 3.3957c -0.3773 0 -0.7315 -0.1694 -1.0626 -0.5082c -0.1155 0.3388 -0.385 0.5082 -0.7931 0.5082c -0.3619 0 -0.6314 -0.2849 -0.8162 -0.8624c -0.0616 -0.1848 -0.0924 -0.2926 -0.0924 -0.3311c 0 -0.0847 0.0539 -0.1309 0.1617 -0.1309c 0.154 0 0.1617 0.0847 0.2002 0.2541c 0.1309 0.5313 0.3003 0.7931 0.5236 0.7931c 0.1463 0 0.2156 -0.1155 0.2156 -0.3388c 0 -0.0847 -0.0077 -0.1617 -0.0231 -0.2233l -0.8624 -3.465c -0.0539 -0.2156 -0.0693 -0.2541 -0.3388 -0.2541c -0.1617 0 -0.2387 -0.0462 -0.2387 -0.1848c 0 -0.1001 0.0462 -0.1463 0.1386 -0.1463c 0.1232 0 0.5236 0.0308 0.6545 0.0308c 0.1463 0 0.6468 -0.0308 0.7931 -0.0308c 0.1232 0 0.1848 0.0693 0.1848 0.2002c 0 0.0847 -0.077 0.1309 -0.231 0.1309c -0.2233 0 -0.3388 0.0231 -0.3388 0.0616c 0 0.0077 0.0077 0.0462 0.0231 0.1001l 0.3234 1.309c 0.1771 -0.2695 0.4389 -0.4004 0.77 -0.4004c 0.5236 0 0.9856 0.2387 1.3937 0.7084c 0.3927 0.4543 0.5852 0.9471 0.5852 1.4784c 0 0.7161 -0.4466 1.3013 -1.1704 1.3013Z m -0.0231 -0.2772c 0.3465 0 0.5236 -0.231 0.5236 -0.7007c 0 -0.4389 -0.231 -1.2166 -0.385 -1.5169c -0.154 -0.3157 -0.5159 -0.7238 -0.924 -0.7238c -0.154 0 -0.2849 0.0462 -0.3927 0.1463c -0.1694 0.1617 -0.2541 0.3234 -0.2541 0.4851c 0 0.0154 0.0077 0.0539 0.0231 0.1078l 0.3773 1.5246c 0.3388 0.4543 0.6853 0.6776 1.0318 0.6776Z "/></symbol><symbol id="g74095D2A60C48A9D512C1590D5CFCC34" overflow="visible"><path d="M 0 0m 9.504 7.513c -0.209 0 -0.891 -0.033 -1.1 -0.033c -0.209 0 -0.902 0.033 -1.111 0.033c -0.165 0 -0.242 -0.088 -0.242 -0.264c 0 -0.099 0.077 -0.154 0.242 -0.165c 0.462 0 0.693 -0.143 0.693 -0.429c 0 -0.066 -0.011 -0.143 -0.022 -0.22l -1.188 -4.708l -2.365 5.555c -0.088 0.209 -0.11 0.231 -0.385 0.231h -1.463c -0.264 0 -0.363 -0.022 -0.363 -0.264c 0 -0.11 0.121 -0.165 0.352 -0.165c 0.462 0 0.693 -0.011 0.704 -0.044l -1.463 -5.83c -0.099 -0.429 -0.352 -0.671 -0.748 -0.748c -0.286 -0.033 -0.616 0.011 -0.616 -0.297c 0 -0.11 0.066 -0.165 0.187 -0.165c 0.198 0 0.88 0.033 1.089 0.033c 0.209 0 0.913 -0.033 1.122 -0.033c 0.165 0 0.242 0.088 0.242 0.264c 0 0.099 -0.088 0.154 -0.264 0.165c -0.451 0.011 -0.671 0.154 -0.671 0.429c 0 0.055 0.011 0.132 0.033 0.242l 1.419 5.621l 2.75 -6.49c 0.066 -0.154 0.154 -0.231 0.253 -0.231c 0.099 0 0.165 0.088 0.209 0.264l 1.529 6.05c 0.143 0.561 0.451 0.759 1.133 0.77c 0.154 0.011 0.231 0.099 0.231 0.275c -0.033 0.099 -0.044 0.154 -0.187 0.154Z "/></symbol></defs></svg></span></a></span>, then <span class="link local"><a href="/0002.html" title="Elementary equivalence [0002]"><span class="typst-inline" style="vertical-align: -0em;"><svg style="overflow: visible; width: 3.314555556em; height: 0.683em;" viewBox="0 0 36.460111111 7.513" width="36.460111111pt" height="7.513pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.513)"><use xlink:href="#gC45012E9777FA5A123D693620FE7C717" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 14.847555556 7.513)"><use xlink:href="#g3F80EB80EDD34B0F1EE1E732922BAB3B" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 26.461111111 7.513)"><use xlink:href="#g74095D2A60C48A9D512C1590D5CFCC34" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gC45012E9777FA5A123D693620FE7C717" overflow="visible"><path d="M 0 0m 6.534 0.176c 0 -0.121 0.066 -0.176 0.209 -0.176l 1.353 0.033c 0.253 0.011 1.144 -0.033 1.353 -0.033c 0.165 0 0.253 0.088 0.253 0.264c 0 0.11 -0.11 0.165 -0.341 0.165c -0.451 0 -0.671 0.044 -0.671 0.143c 0 0.033 0.022 0.11 0.055 0.253l 1.452 5.797c 0.055 0.231 0.165 0.374 0.308 0.429c 0.066 0.022 0.264 0.033 0.583 0.033c 0.275 0 0.396 0.011 0.396 0.264c 0 0.11 -0.11 0.165 -0.341 0.165h -1.441c -0.319 0 -0.319 -0.022 -0.462 -0.231l -3.916 -6.094l -0.836 6.039c -0.044 0.275 -0.066 0.286 -0.385 0.286h -1.496c -0.242 0 -0.363 -0.011 -0.363 -0.253c 0 -0.121 0.121 -0.176 0.352 -0.176c 0.22 0 0.671 0.033 0.671 -0.143c 0 -0.022 -0.011 -0.088 -0.044 -0.198l -1.386 -5.533c -0.099 -0.418 -0.352 -0.671 -0.737 -0.748c -0.275 -0.033 -0.638 0.011 -0.638 -0.286c 0 -0.121 0.066 -0.176 0.198 -0.176c 0.198 0 0.891 0.033 1.089 0.033c 0.209 0 0.913 -0.033 1.122 -0.033c 0.165 0 0.242 0.088 0.242 0.264c 0 0.099 -0.077 0.154 -0.242 0.165c -0.462 0 -0.693 0.143 -0.693 0.429c 0 0.044 0.011 0.121 0.044 0.242l 1.43 5.731l 0.913 -6.545c 0.033 -0.187 0.099 -0.286 0.209 -0.286c 0.088 0 0.176 0.077 0.275 0.22l 4.279 6.677l -1.496 -5.995c -0.066 -0.242 -0.176 -0.385 -0.341 -0.44c -0.066 -0.022 -0.275 -0.033 -0.616 -0.033c -0.231 0 -0.341 -0.022 -0.341 -0.253Z "/></symbol><symbol id="g3F80EB80EDD34B0F1EE1E732922BAB3B" overflow="visible"><path d="M 0 0m 7.678 5.104h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.264c 0 -0.165 0.088 -0.253 0.264 -0.253h 6.798c 0.176 0 0.264 0.088 0.264 0.253c 0 0.143 -0.121 0.264 -0.264 0.264Z m 0 -2.09h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.264c 0 -0.176 0.088 -0.264 0.264 -0.264h 6.798c 0.176 0 0.264 0.088 0.264 0.264c 0 0.132 -0.121 0.264 -0.264 0.264Z m 0 -2.101h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.253c 0 -0.176 0.088 -0.264 0.264 -0.264h 6.798c 0.176 0 0.264 0.088 0.264 0.264c 0 0.132 -0.121 0.253 -0.264 0.253Z "/></symbol><symbol id="g74095D2A60C48A9D512C1590D5CFCC34" overflow="visible"><path d="M 0 0m 9.504 7.513c -0.209 0 -0.891 -0.033 -1.1 -0.033c -0.209 0 -0.902 0.033 -1.111 0.033c -0.165 0 -0.242 -0.088 -0.242 -0.264c 0 -0.099 0.077 -0.154 0.242 -0.165c 0.462 0 0.693 -0.143 0.693 -0.429c 0 -0.066 -0.011 -0.143 -0.022 -0.22l -1.188 -4.708l -2.365 5.555c -0.088 0.209 -0.11 0.231 -0.385 0.231h -1.463c -0.264 0 -0.363 -0.022 -0.363 -0.264c 0 -0.11 0.121 -0.165 0.352 -0.165c 0.462 0 0.693 -0.011 0.704 -0.044l -1.463 -5.83c -0.099 -0.429 -0.352 -0.671 -0.748 -0.748c -0.286 -0.033 -0.616 0.011 -0.616 -0.297c 0 -0.11 0.066 -0.165 0.187 -0.165c 0.198 0 0.88 0.033 1.089 0.033c 0.209 0 0.913 -0.033 1.122 -0.033c 0.165 0 0.242 0.088 0.242 0.264c 0 0.099 -0.088 0.154 -0.264 0.165c -0.451 0.011 -0.671 0.154 -0.671 0.429c 0 0.055 0.011 0.132 0.033 0.242l 1.419 5.621l 2.75 -6.49c 0.066 -0.154 0.154 -0.231 0.253 -0.231c 0.099 0 0.165 0.088 0.209 0.264l 1.529 6.05c 0.143 0.561 0.451 0.759 1.133 0.77c 0.154 0.011 0.231 0.099 0.231 0.275c -0.033 0.099 -0.044 0.154 -0.187 0.154Z "/></symbol></defs></svg></span></a></span>. In particular, if <span class="typst-inline" style="vertical-align: -0.026999999999999955em;"><svg style="overflow: visible; width: 0.669em; height: 0.737em;" viewBox="0 0 7.359 8.107" width="7.359pt" height="8.107pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.81)"><use xlink:href="#gE427328627CEF31738B94F3CA17352E4" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gE427328627CEF31738B94F3CA17352E4" overflow="visible"><path d="M 0 0m 0.891 5.654c 0 0.792 0.726 1.122 1.595 1.122c 0.561 0 1.111 -0.088 1.65 -0.264c -0.715 -0.715 -1.144 -1.408 -1.298 -2.079c 0.044 -0.253 0.319 -0.66 0.825 -1.232c 0.341 -0.385 0.517 -0.693 0.517 -0.913c 0 -0.352 -0.264 -0.682 -0.781 -0.979c -0.165 0.033 -0.363 0.055 -0.594 0.055c -0.143 0 -0.264 0 -0.341 -0.011c -0.506 -0.407 -0.957 -0.825 -1.364 -1.254l 0.154 -0.242c 0.561 0.44 1.012 0.66 1.342 0.66c 0.286 0 0.605 -0.099 0.957 -0.286c 0.572 -0.308 1.023 -0.484 1.364 -0.528c 0.583 0.275 1.21 0.814 1.903 1.606l -0.176 0.242c -0.275 -0.275 -0.539 -0.484 -0.792 -0.627c -0.253 -0.143 -0.473 -0.209 -0.66 -0.209c -0.275 0 -0.737 0.154 -1.408 0.462c 0.825 0.682 1.232 1.232 1.232 1.639c 0 0.341 -0.275 0.814 -0.825 1.419c -0.297 0.33 -0.451 0.616 -0.451 0.847c 0 0.473 0.253 0.913 0.77 1.32c 0.418 -0.099 0.88 -0.154 1.386 -0.154c 0.319 0 0.572 0.066 0.781 0.187l 0.759 1.001v 0.374c -0.385 -0.44 -0.781 -0.66 -1.199 -0.66c -0.253 0 -0.671 0.055 -1.254 0.165c -0.781 0.154 -1.397 0.231 -1.859 0.231c -0.792 0 -1.441 -0.242 -1.958 -0.715c -0.605 -0.561 -0.902 -1.144 -0.902 -1.727c 0 -0.44 0.198 -0.814 0.605 -1.133l 0.77 0.77c -0.385 0.154 -0.748 0.44 -0.748 0.913Z "/></symbol></defs></svg></span> is a satisfiable theory in which every two models are partially isomorphic, then <span class="typst-inline" style="vertical-align: -0.026999999999999955em;"><svg style="overflow: visible; width: 0.669em; height: 0.737em;" viewBox="0 0 7.359 8.107" width="7.359pt" height="8.107pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.81)"><use xlink:href="#gE427328627CEF31738B94F3CA17352E4" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gE427328627CEF31738B94F3CA17352E4" overflow="visible"><path d="M 0 0m 0.891 5.654c 0 0.792 0.726 1.122 1.595 1.122c 0.561 0 1.111 -0.088 1.65 -0.264c -0.715 -0.715 -1.144 -1.408 -1.298 -2.079c 0.044 -0.253 0.319 -0.66 0.825 -1.232c 0.341 -0.385 0.517 -0.693 0.517 -0.913c 0 -0.352 -0.264 -0.682 -0.781 -0.979c -0.165 0.033 -0.363 0.055 -0.594 0.055c -0.143 0 -0.264 0 -0.341 -0.011c -0.506 -0.407 -0.957 -0.825 -1.364 -1.254l 0.154 -0.242c 0.561 0.44 1.012 0.66 1.342 0.66c 0.286 0 0.605 -0.099 0.957 -0.286c 0.572 -0.308 1.023 -0.484 1.364 -0.528c 0.583 0.275 1.21 0.814 1.903 1.606l -0.176 0.242c -0.275 -0.275 -0.539 -0.484 -0.792 -0.627c -0.253 -0.143 -0.473 -0.209 -0.66 -0.209c -0.275 0 -0.737 0.154 -1.408 0.462c 0.825 0.682 1.232 1.232 1.232 1.639c 0 0.341 -0.275 0.814 -0.825 1.419c -0.297 0.33 -0.451 0.616 -0.451 0.847c 0 0.473 0.253 0.913 0.77 1.32c 0.418 -0.099 0.88 -0.154 1.386 -0.154c 0.319 0 0.572 0.066 0.781 0.187l 0.759 1.001v 0.374c -0.385 -0.44 -0.781 -0.66 -1.199 -0.66c -0.253 0 -0.671 0.055 -1.254 0.165c -0.781 0.154 -1.397 0.231 -1.859 0.231c -0.792 0 -1.441 -0.242 -1.958 -0.715c -0.605 -0.561 -0.902 -1.144 -0.902 -1.727c 0 -0.44 0.198 -0.814 0.605 -1.133l 0.77 0.77c -0.385 0.154 -0.748 0.44 -0.748 0.913Z "/></symbol></defs></svg></span> is complete.</p><p>Compare this proposition to <span class="link local"><a href="/001H.html" title=" [001H]">001H</a></span>.</p></body></details></section><footer><section class="block link-list" id="backlinks"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Theorem" style="margin-bottom: 0.4em;"><header><h1><span class="taxon">Theorem. </span> <a class="slug" href="/001H.html">[001H]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/model-theory.html" title="Model Theory [model-theory]">Model Theory</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></section></details></section></footer></article></div></body></html>

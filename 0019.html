@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Primitive formula</title><link rel="icon" href="/assets/favicon.ico" /><template id="theme-option-template"><input type="radio" name="theme" /><label></label></template><script src="/main.js"></script><!-- Also see: https://katex.org/docs/autorender -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+<!-- Also see: https://github.com/KaTeX/KaTeX/tree/main/contrib/copy-tex -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/copy-tex.min.js" integrity="sha384-Pe2JWbaShhSRT0SESJ9XLPeAsi4yrNi7r/CiH0Coq7giBjK5a6Ae7XcybE8rNlQP" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      trust: true,
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script>
+<link rel="stylesheet" href="/main.css"><style>
+@media only screen and (min-width: 1000px) {
+  #grid-wrapper { grid-template-columns: var(--article-max-width) var(--toc-max-width); }
+  nav#toc { max-width: 45ex; }
+}
+</style><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+</head><body><header class="header"><nav class="nav"><div class="logo"><span class="cursor-pointer" onclick="window.location.href='/index.html'" title="My forest">« My forest</span></div></nav></header><div id="grid-wrapper" style="grid-template-areas: 'article toc';" data-base-url="/"><nav id="toc" class="sticky-nav mobile-sticky-nav"><div id="theme-options"></div></nav>
+
+<article><section class="block" data-taxon="Definition"><details open><summary id="0019"><header><h1><span class="taxon">Definition. </span>Primitive formula <a class="slug" href="/0019.html">[0019]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/model-theory.html" title="Model Theory [model-theory]">Model Theory</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></summary><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><p>A <em>primitive formula</em> is a formula of the form <span class="typst-inline" style="vertical-align: -0.21799999999999997em;"><svg style="overflow: visible; width: 2.06em; height: 0.902em;" viewBox="0 0 22.66 9.922" width="22.66pt" height="9.922pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.524)"><use xlink:href="#g67DB7ABC29CC6291DD904D9D3F28B3CB" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 6.116 7.524)"><use xlink:href="#gA4AC33BF76001B15D203F6668E9483BD" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 12.408 7.524)"><use xlink:href="#g1F4E5D3D42AC9A300E88B8C6DDEDA935" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 15.466 7.524)"><use xlink:href="#g971BB1561A775D3D4A4C4B2309555A26" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="g67DB7ABC29CC6291DD904D9D3F28B3CB" overflow="visible"><path d="M 0 0m 5.236 0c 0.176 0 0.264 0.088 0.264 0.264v 6.996c 0 0.176 -0.088 0.264 -0.264 0.264h -4.356c -0.176 0 -0.264 -0.088 -0.264 -0.264c 0 -0.165 0.088 -0.253 0.264 -0.253h 4.103v -2.981h -4.103c -0.176 0 -0.264 -0.088 -0.264 -0.264c 0 -0.176 0.088 -0.264 0.264 -0.264h 4.103v -2.981h -4.103c -0.176 0 -0.264 -0.088 -0.264 -0.253c 0 -0.176 0.088 -0.264 0.264 -0.264Z "/></symbol><symbol id="gA4AC33BF76001B15D203F6668E9483BD" overflow="visible"><path d="M 0 0m 5.797 4.103c 0 0.506 -0.495 0.759 -1.045 0.759c -0.473 0 -0.847 -0.253 -1.133 -0.759c -0.231 0.506 -0.616 0.759 -1.177 0.759c -0.539 0 -0.979 -0.253 -1.331 -0.748c -0.297 -0.429 -0.451 -0.748 -0.451 -0.957c 0 -0.099 0.055 -0.154 0.165 -0.154c 0.099 0 0.165 0.055 0.187 0.154c 0.209 0.638 0.671 1.386 1.408 1.386c 0.363 0 0.539 -0.231 0.539 -0.682c 0 -0.231 -0.198 -1.089 -0.583 -2.563c -0.187 -0.737 -0.517 -1.1 -0.99 -1.1c -0.154 0 -0.297 0.033 -0.418 0.088c 0.286 0.11 0.429 0.308 0.429 0.594c 0 0.286 -0.143 0.429 -0.44 0.429c -0.363 0 -0.638 -0.308 -0.638 -0.671c 0 -0.506 0.517 -0.759 1.056 -0.759c 0.462 0 0.836 0.253 1.133 0.759c 0.209 -0.506 0.605 -0.759 1.177 -0.759c 0.528 0 0.968 0.253 1.32 0.748c 0.297 0.429 0.451 0.748 0.451 0.957c 0 0.099 -0.055 0.154 -0.165 0.154c -0.099 0 -0.154 -0.055 -0.187 -0.154c -0.187 -0.627 -0.682 -1.386 -1.397 -1.386c -0.363 0 -0.55 0.22 -0.55 0.671c 0 0.143 0.055 0.451 0.176 0.946l 0.374 1.485c 0.209 0.825 0.55 1.243 1.034 1.243c 0.154 0 0.297 -0.033 0.418 -0.088c -0.297 -0.099 -0.44 -0.297 -0.44 -0.594c 0 -0.286 0.154 -0.429 0.451 -0.429c 0.352 0 0.627 0.319 0.627 0.671Z "/></symbol><symbol id="g1F4E5D3D42AC9A300E88B8C6DDEDA935" overflow="visible"><path d="M 0 0m 2.112 0.583c 0 0.319 -0.264 0.583 -0.583 0.583c -0.319 0 -0.583 -0.264 -0.583 -0.583c 0 -0.319 0.264 -0.583 0.583 -0.583c 0.319 0 0.583 0.264 0.583 0.583Z "/></symbol><symbol id="g971BB1561A775D3D4A4C4B2309555A26" overflow="visible"><path d="M 0 0m 5.533 4.862c -0.187 0 -0.352 -0.033 -0.517 -0.088c -0.693 -0.231 -1.177 -0.913 -1.452 -1.54c -0.462 -1.023 -0.594 -1.441 -0.935 -2.596c -1.133 0.231 -1.705 0.748 -1.705 1.562c 0 0.737 0.517 1.804 0.88 2.222c 0.066 0.077 0.099 0.132 0.099 0.165c 0 0.099 -0.055 0.154 -0.176 0.154c -0.187 0 -0.429 -0.319 -0.726 -0.957c -0.297 -0.638 -0.451 -1.21 -0.451 -1.705c 0 -1.144 0.869 -1.87 1.87 -2.112l -0.561 -1.782c -0.044 -0.121 -0.066 -0.198 -0.066 -0.231c 0 -0.231 0.121 -0.352 0.363 -0.352c 0.209 0 0.352 0.11 0.44 0.319l 0.374 1.947c 0.121 -0.011 0.22 -0.011 0.319 -0.011c 0.902 0 1.705 0.352 2.431 1.056c 0.726 0.704 1.089 1.507 1.089 2.409c 0 0.858 -0.451 1.54 -1.276 1.54Z m 0.88 -1.782c 0 -0.693 -0.33 -1.298 -1.001 -1.815c -0.627 -0.462 -1.298 -0.693 -2.024 -0.693c -0.066 0 -0.132 0 -0.187 0.011c -0.066 0 -0.099 0 -0.099 -0.011c 0.165 0.869 0.264 1.386 0.308 1.54c 0.253 0.869 1.001 2.035 2.013 2.035c 0.616 0 0.99 -0.44 0.99 -1.067Z "/></symbol></defs></svg></span>, where <span class="typst-inline" style="vertical-align: -0.21799999999999997em;"><svg style="overflow: visible; width: 0.654em; height: 0.66em;" viewBox="0 0 7.194 7.26" width="7.194pt" height="7.26pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 4.862)"><use xlink:href="#g971BB1561A775D3D4A4C4B2309555A26" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="g971BB1561A775D3D4A4C4B2309555A26" overflow="visible"><path d="M 0 0m 5.533 4.862c -0.187 0 -0.352 -0.033 -0.517 -0.088c -0.693 -0.231 -1.177 -0.913 -1.452 -1.54c -0.462 -1.023 -0.594 -1.441 -0.935 -2.596c -1.133 0.231 -1.705 0.748 -1.705 1.562c 0 0.737 0.517 1.804 0.88 2.222c 0.066 0.077 0.099 0.132 0.099 0.165c 0 0.099 -0.055 0.154 -0.176 0.154c -0.187 0 -0.429 -0.319 -0.726 -0.957c -0.297 -0.638 -0.451 -1.21 -0.451 -1.705c 0 -1.144 0.869 -1.87 1.87 -2.112l -0.561 -1.782c -0.044 -0.121 -0.066 -0.198 -0.066 -0.231c 0 -0.231 0.121 -0.352 0.363 -0.352c 0.209 0 0.352 0.11 0.44 0.319l 0.374 1.947c 0.121 -0.011 0.22 -0.011 0.319 -0.011c 0.902 0 1.705 0.352 2.431 1.056c 0.726 0.704 1.089 1.507 1.089 2.409c 0 0.858 -0.451 1.54 -1.276 1.54Z m 0.88 -1.782c 0 -0.693 -0.33 -1.298 -1.001 -1.815c -0.627 -0.462 -1.298 -0.693 -2.024 -0.693c -0.066 0 -0.132 0 -0.187 0.011c -0.066 0 -0.099 0 -0.099 -0.011c 0.165 0.869 0.264 1.386 0.308 1.54c 0.253 0.869 1.001 2.035 2.013 2.035c 0.616 0 0.99 -0.44 0.99 -1.067Z "/></symbol></defs></svg></span> is a conjunction of atomic formulas or their negations.</p></body></details></section><footer><section class="block link-list" id="backlinks"><details open><summary><header><h1>Backlinks</h1></header></summary><section class="block" data-taxon="Lemma" style="margin-bottom: 0.4em;"><header><h1><span class="taxon">Lemma. </span> <a class="slug" href="/001A.html">[001A]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/model-theory.html" title="Model Theory [model-theory]">Model Theory</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></section></details></section></footer></article></div></body></html>
