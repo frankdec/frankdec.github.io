@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title>Category with family</title><link rel="icon" href="/assets/favicon.ico" /><template id="theme-option-template"><input type="radio" name="theme" /><label></label></template><script src="/main.js"></script><!-- Also see: https://katex.org/docs/autorender -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+<!-- Also see: https://github.com/KaTeX/KaTeX/tree/main/contrib/copy-tex -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/copy-tex.min.js" integrity="sha384-Pe2JWbaShhSRT0SESJ9XLPeAsi4yrNi7r/CiH0Coq7giBjK5a6Ae7XcybE8rNlQP" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      trust: true,
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script>
+<link rel="stylesheet" href="/main.css"><style>
+@media only screen and (min-width: 1000px) {
+  #grid-wrapper { grid-template-columns: var(--article-max-width) var(--toc-max-width); }
+  nav#toc { max-width: 45ex; }
+}
+</style><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+</head><body><header class="header"><nav class="nav"><div class="logo"><span class="cursor-pointer" onclick="window.location.href='/index.html'" title="My forest">« My forest</span></div></nav></header><div id="grid-wrapper" style="grid-template-areas: 'article toc';" data-base-url="/"><nav id="toc" class="sticky-nav mobile-sticky-nav"><div id="theme-options"></div></nav>
+
+<article><section class="block" data-taxon="Definition"><details open><summary id="0012"><header><h1><span class="taxon">Definition. </span>Category with family <a class="slug" href="/0012.html">[0012]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/index.html" title="My forest [index]">My forest</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></summary><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><p>A <em>category with family (CwF)</em> consists of a small category <span class="typst-inline" style="vertical-align: -0.024000000000000018em;"><svg style="overflow: visible; width: 0.585em; height: 0.73em;" viewBox="0 0 6.435 8.03" width="6.435pt" height="8.03pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.766)"><use xlink:href="#gAD84FCA53FD59E8172CF8A5771D68C87" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gAD84FCA53FD59E8172CF8A5771D68C87" overflow="visible"><path d="M 0 0m 5.225 5.368c 0.209 0.297 0.66 1.232 0.66 1.65c 0 0.539 -0.385 0.748 -0.88 0.748c -1.859 0 -3.124 -1.265 -3.52 -1.76c -0.693 -0.869 -1.353 -2.255 -1.353 -3.762c 0 -1.419 0.671 -2.508 2.09 -2.508c 1.166 0 2.53 0.792 3.212 1.903c 0.033 0.055 0.055 0.099 0.055 0.154c -0.022 0.066 -0.099 0.088 -0.154 0.088c -0.22 0 -0.66 -0.198 -0.869 -0.528c -0.528 -0.836 -1.144 -0.924 -1.507 -0.924h -0.11c -1.144 0 -1.694 1.001 -1.694 2.31c 0 1.408 0.792 3.377 1.881 4.037c 0.297 0.176 0.715 0.297 1.199 0.297c 0.396 0 0.627 -0.132 0.627 -0.517c 0 -0.341 -0.33 -0.979 -0.506 -1.309c -0.055 -0.121 -0.099 -0.209 -0.099 -0.22c 0 -0.088 0.066 -0.121 0.132 -0.121c 0.121 0 0.594 0.099 0.836 0.462Z "/></symbol></defs></svg></span> together with the following data in <span class="typst-inline" style="vertical-align: -0.24799999999999994em;"><svg style="overflow: visible; width: 2.902em; height: 0.996em;" viewBox="0 0 31.922 10.956" width="31.922pt" height="10.956pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 8.228)"><use xlink:href="#g6AAB547EB676BA9942CDEA6D9E969C7D" x="0" y="0" fill="#000000" fill-rule="nonzero"/><use xlink:href="#gA0E126DD16301C6CD5EFD612647F3DA" x="7.029" y="0" fill="#000000" fill-rule="nonzero"/><use xlink:href="#g853209583D8E83F07979A37A388EA3DD" x="11.242" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 16.929 8.228)"><use xlink:href="#gCBFDB4FAA60E8030E7B751E03D6CAAA6" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 21.208 8.228)"><use xlink:href="#gAD84FCA53FD59E8172CF8A5771D68C87" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 27.643 8.228)"><use xlink:href="#g11C1096A524ED08942C2BB5E0564A17C" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="g6AAB547EB676BA9942CDEA6D9E969C7D" overflow="visible"><path d="M 0 0m 3.872 3.146c 0.66 0 1.243 0.209 1.738 0.616c 0.528 0.429 0.792 0.979 0.792 1.628c 0 0.671 -0.275 1.221 -0.825 1.65c -0.506 0.396 -1.1 0.594 -1.782 0.594h -2.739v -7.634h 1.045v 3.146Z m 1.562 2.244c 0 -0.979 -0.858 -1.529 -1.881 -1.529h -1.485v 3.08h 1.485c 1.045 0 1.881 -0.55 1.881 -1.551Z "/></symbol><symbol id="gA0E126DD16301C6CD5EFD612647F3DA" overflow="visible"><path d="M 0 0m 3.96 1.43c 0 0.385 -0.132 0.704 -0.396 0.979l -0.033 0.044c -0.297 0.264 -0.726 0.451 -1.276 0.55c -0.451 0.088 -0.737 0.187 -0.858 0.297c -0.121 0.11 -0.187 0.253 -0.187 0.418c 0 0.418 0.286 0.627 0.869 0.627c 0.55 0 1.067 -0.143 1.562 -0.44l 0.143 0.803c -0.517 0.242 -1.056 0.363 -1.595 0.363c -1.023 0 -1.826 -0.429 -1.826 -1.463c 0 -0.693 0.572 -1.254 1.265 -1.408c 0.341 -0.077 0.594 -0.132 0.77 -0.165c 0.363 -0.088 0.715 -0.286 0.715 -0.682c 0 -0.473 -0.319 -0.704 -0.968 -0.704c -0.583 0 -1.144 0.187 -1.694 0.561l -0.143 -0.836c 0.649 -0.33 1.265 -0.495 1.848 -0.495c 1.067 0 1.804 0.506 1.804 1.551Z "/></symbol><symbol id="g853209583D8E83F07979A37A388EA3DD" overflow="visible"><path d="M 0 0m 2.86 4.29c 0.704 0 1.001 -0.374 1.001 -1.078v -3.212h 0.924v 3.289c 0 1.166 -0.506 1.749 -1.518 1.749c -0.594 0 -1.089 -0.231 -1.485 -0.704v 3.3h -0.891v -7.634h 0.924v 2.706c 0 0.803 0.319 1.584 1.045 1.584Z "/></symbol><symbol id="gCBFDB4FAA60E8030E7B751E03D6CAAA6" overflow="visible"><path d="M 0 0m 3.498 -2.728c 0.099 0 0.154 0.055 0.154 0.154c 0 0.033 -0.022 0.077 -0.055 0.121c -0.572 0.44 -1.034 1.166 -1.375 2.167c -0.297 0.869 -0.451 1.727 -0.451 2.574v 0.924c 0 0.847 0.154 1.705 0.451 2.574c 0.341 1.001 0.803 1.727 1.375 2.167c 0.033 0.033 0.055 0.077 0.055 0.121c 0 0.099 -0.055 0.154 -0.154 0.154c -0.011 0 -0.044 -0.011 -0.077 -0.033c -0.66 -0.506 -1.21 -1.254 -1.661 -2.255c -0.429 -0.957 -0.649 -1.859 -0.649 -2.728v -0.924c 0 -0.869 0.22 -1.771 0.649 -2.728c 0.451 -1.001 1.001 -1.749 1.661 -2.255c 0.033 -0.022 0.066 -0.033 0.077 -0.033Z "/></symbol><symbol id="gAD84FCA53FD59E8172CF8A5771D68C87" overflow="visible"><path d="M 0 0m 5.225 5.368c 0.209 0.297 0.66 1.232 0.66 1.65c 0 0.539 -0.385 0.748 -0.88 0.748c -1.859 0 -3.124 -1.265 -3.52 -1.76c -0.693 -0.869 -1.353 -2.255 -1.353 -3.762c 0 -1.419 0.671 -2.508 2.09 -2.508c 1.166 0 2.53 0.792 3.212 1.903c 0.033 0.055 0.055 0.099 0.055 0.154c -0.022 0.066 -0.099 0.088 -0.154 0.088c -0.22 0 -0.66 -0.198 -0.869 -0.528c -0.528 -0.836 -1.144 -0.924 -1.507 -0.924h -0.11c -1.144 0 -1.694 1.001 -1.694 2.31c 0 1.408 0.792 3.377 1.881 4.037c 0.297 0.176 0.715 0.297 1.199 0.297c 0.396 0 0.627 -0.132 0.627 -0.517c 0 -0.341 -0.33 -0.979 -0.506 -1.309c -0.055 -0.121 -0.099 -0.209 -0.099 -0.22c 0 -0.088 0.066 -0.121 0.132 -0.121c 0.121 0 0.594 0.099 0.836 0.462Z "/></symbol><symbol id="g11C1096A524ED08942C2BB5E0564A17C" overflow="visible"><path d="M 0 0m 0.858 -2.695c 0.66 0.506 1.21 1.254 1.661 2.255c 0.429 0.957 0.649 1.859 0.649 2.728v 0.924c 0 0.869 -0.22 1.771 -0.649 2.728c -0.451 1.001 -1.001 1.749 -1.661 2.255c -0.033 0.022 -0.066 0.033 -0.077 0.033c -0.099 0 -0.154 -0.055 -0.154 -0.154c 0 -0.044 0.022 -0.088 0.055 -0.121c 0.572 -0.44 1.034 -1.166 1.375 -2.167c 0.297 -0.869 0.451 -1.727 0.451 -2.574v -0.924c 0 -0.847 -0.154 -1.705 -0.451 -2.574c -0.341 -1.001 -0.803 -1.727 -1.375 -2.167c -0.033 -0.044 -0.055 -0.088 -0.055 -0.121c 0 -0.099 0.055 -0.154 0.154 -0.154c 0.011 0 0.044 0.011 0.077 0.033Z "/></symbol></defs></svg></span>.</p><ul><li>A type <span class="typst-inline" style="vertical-align: -0.022000000000000026em;"><svg style="overflow: visible; width: 2.510555556em; height: 0.706em;" viewBox="0 0 27.616111111 7.766" width="27.616111111pt" height="7.766pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.524)"><use xlink:href="#gD9EB11B1AD319EC0BA162C567B51F0C0" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 9.171555556 7.524)"><use xlink:href="#g5581B2EB969F9350837BE196D9BE804F" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 18.948111111 7.524)"><use xlink:href="#g9B75781730F6F59BCA3F2BB046B5F2BE" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gD9EB11B1AD319EC0BA162C567B51F0C0" overflow="visible"><path d="M 0 0m 5.489 0.264c 0 0.209 -0.165 0.253 -0.418 0.253h -1.078v 6.336c -0.011 0.154 -0.099 0.231 -0.253 0.231c -0.033 0 -0.099 -0.022 -0.209 -0.077l -2.673 -1.386c -0.165 -0.088 -0.253 -0.187 -0.253 -0.286c 0 -0.176 0.088 -0.264 0.264 -0.264c 0.033 0 0.11 0.033 0.209 0.088l 1.023 0.517v -5.159h -1.067c -0.286 0 -0.429 -0.088 -0.429 -0.253c 0 -0.176 0.143 -0.264 0.429 -0.264h 4.037c 0.264 0 0.418 0.044 0.418 0.264Z m -2.013 6.127v -5.874h -0.858v 5.434Z "/></symbol><symbol id="g5581B2EB969F9350837BE196D9BE804F" overflow="visible"><path d="M 0 0m 5.852 4.026h -4.719v 3.234c 0 0.176 -0.088 0.264 -0.253 0.264c -0.176 0 -0.264 -0.088 -0.264 -0.264v -6.996c 0 -0.176 0.088 -0.264 0.264 -0.264c 0.165 0 0.253 0.088 0.253 0.264v 3.234h 4.719c 0.176 0 0.264 0.088 0.264 0.264c 0 0.143 -0.121 0.264 -0.264 0.264Z "/></symbol><symbol id="g9B75781730F6F59BCA3F2BB046B5F2BE" overflow="visible"><path d="M 0 0m 7.062 7.48c -0.209 0 -0.913 0.033 -1.122 0.033c -0.165 0 -0.242 -0.088 -0.242 -0.264c 0 -0.099 0.077 -0.154 0.231 -0.165c 0.473 0 0.704 -0.143 0.704 -0.429c 0 -0.066 -0.011 -0.143 -0.033 -0.22l -0.979 -3.883c -0.165 -0.627 -0.484 -1.166 -0.957 -1.628c -0.517 -0.495 -1.089 -0.737 -1.705 -0.737c -0.814 0 -1.287 0.55 -1.287 1.364l 0.011 0.099c 0 0.209 0.033 0.451 0.11 0.737l 1.056 4.235c 0.055 0.231 0.154 0.374 0.297 0.429c 0.066 0.022 0.253 0.033 0.572 0.033c 0.286 0 0.407 0 0.407 0.264c 0 0.11 -0.066 0.165 -0.187 0.165l -1.397 -0.033l -1.397 0.033c -0.176 0 -0.253 -0.099 -0.253 -0.264c 0 -0.077 0.033 -0.132 0.088 -0.143c 0.11 -0.011 0.198 -0.022 0.253 -0.022c 0.341 -0.011 0.539 -0.033 0.594 -0.044c 0.055 -0.011 0.077 -0.044 0.077 -0.099c 0 -0.022 -0.011 -0.099 -0.044 -0.22l -1.045 -4.191c -0.055 -0.209 -0.077 -0.418 -0.077 -0.638c 0 -1.265 0.913 -2.134 2.178 -2.134c 0.715 0 1.375 0.275 1.98 0.836c 0.583 0.528 0.957 1.144 1.133 1.859l 0.968 3.861c 0.143 0.561 0.451 0.759 1.133 0.77c 0.154 0.011 0.231 0.099 0.231 0.264v 0.044c -0.033 0.077 -0.088 0.121 -0.187 0.121c -0.209 0 -0.902 -0.033 -1.111 -0.033Z "/></symbol></defs></svg></span>.</li><li>A type <span class="typst-inline" style="vertical-align: -0.022000000000000026em;"><svg style="overflow: visible; width: 2.746555556em; height: 0.706em;" viewBox="0 0 30.212111111 7.766" width="30.212111111pt" height="7.766pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 7.524)"><use xlink:href="#g9B75781730F6F59BCA3F2BB046B5F2BE" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 11.723555556 7.524)"><use xlink:href="#g5581B2EB969F9350837BE196D9BE804F" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 21.500111111 7.524)"><use xlink:href="#gC9517E8B09E47D681F2EE08C250CD9E3" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="g9B75781730F6F59BCA3F2BB046B5F2BE" overflow="visible"><path d="M 0 0m 7.062 7.48c -0.209 0 -0.913 0.033 -1.122 0.033c -0.165 0 -0.242 -0.088 -0.242 -0.264c 0 -0.099 0.077 -0.154 0.231 -0.165c 0.473 0 0.704 -0.143 0.704 -0.429c 0 -0.066 -0.011 -0.143 -0.033 -0.22l -0.979 -3.883c -0.165 -0.627 -0.484 -1.166 -0.957 -1.628c -0.517 -0.495 -1.089 -0.737 -1.705 -0.737c -0.814 0 -1.287 0.55 -1.287 1.364l 0.011 0.099c 0 0.209 0.033 0.451 0.11 0.737l 1.056 4.235c 0.055 0.231 0.154 0.374 0.297 0.429c 0.066 0.022 0.253 0.033 0.572 0.033c 0.286 0 0.407 0 0.407 0.264c 0 0.11 -0.066 0.165 -0.187 0.165l -1.397 -0.033l -1.397 0.033c -0.176 0 -0.253 -0.099 -0.253 -0.264c 0 -0.077 0.033 -0.132 0.088 -0.143c 0.11 -0.011 0.198 -0.022 0.253 -0.022c 0.341 -0.011 0.539 -0.033 0.594 -0.044c 0.055 -0.011 0.077 -0.044 0.077 -0.099c 0 -0.022 -0.011 -0.099 -0.044 -0.22l -1.045 -4.191c -0.055 -0.209 -0.077 -0.418 -0.077 -0.638c 0 -1.265 0.913 -2.134 2.178 -2.134c 0.715 0 1.375 0.275 1.98 0.836c 0.583 0.528 0.957 1.144 1.133 1.859l 0.968 3.861c 0.143 0.561 0.451 0.759 1.133 0.77c 0.154 0.011 0.231 0.099 0.231 0.264v 0.044c -0.033 0.077 -0.088 0.121 -0.187 0.121c -0.209 0 -0.902 -0.033 -1.111 -0.033Z "/></symbol><symbol id="g5581B2EB969F9350837BE196D9BE804F" overflow="visible"><path d="M 0 0m 5.852 4.026h -4.719v 3.234c 0 0.176 -0.088 0.264 -0.253 0.264c -0.176 0 -0.264 -0.088 -0.264 -0.264v -6.996c 0 -0.176 0.088 -0.264 0.264 -0.264c 0.165 0 0.253 0.088 0.253 0.264v 3.234h 4.719c 0.176 0 0.264 0.088 0.264 0.264c 0 0.143 -0.121 0.264 -0.264 0.264Z "/></symbol><symbol id="gC9517E8B09E47D681F2EE08C250CD9E3" overflow="visible"><path d="M 0 0m 2.189 7.216c 0 -0.11 0.121 -0.165 0.352 -0.165c 0.44 0 0.66 -0.044 0.66 -0.143c 0 -0.033 -0.022 -0.11 -0.055 -0.253l -1.43 -5.753c -0.055 -0.242 -0.165 -0.385 -0.33 -0.44c -0.077 -0.022 -0.275 -0.033 -0.616 -0.033c -0.242 0 -0.352 -0.022 -0.352 -0.253c 0 -0.121 0.121 -0.176 0.352 -0.176h 5.643c 0.264 0 0.286 0.022 0.374 0.209l 0.44 0.99c 0.297 0.682 0.506 1.188 0.627 1.529c -0.022 0.099 -0.055 0.165 -0.176 0.165c -0.077 0 -0.143 -0.055 -0.187 -0.154c -0.275 -0.649 -0.539 -1.144 -0.803 -1.496c -0.44 -0.594 -1.089 -0.814 -2.123 -0.814h -1.595c -0.11 0 -0.187 0 -0.231 0.011c -0.066 0 -0.099 0.022 -0.099 0.055c 0 0.022 0.022 0.099 0.055 0.242l 0.726 2.937h 1.045c 0.517 0 0.792 -0.066 0.847 -0.209c 0.022 -0.055 0.033 -0.132 0.033 -0.242c 0 -0.143 -0.022 -0.319 -0.077 -0.528c -0.022 -0.055 -0.033 -0.099 -0.033 -0.132c 0 -0.11 0.066 -0.165 0.187 -0.165c 0.099 0 0.165 0.088 0.209 0.253l 0.616 2.552c 0 0.11 -0.055 0.165 -0.176 0.165c -0.088 0 -0.154 -0.077 -0.187 -0.231c -0.11 -0.429 -0.253 -0.704 -0.44 -0.836c -0.187 -0.132 -0.495 -0.198 -0.946 -0.198h -0.968l 0.638 2.563c 0.088 0.374 0.088 0.385 0.55 0.385h 1.529c 0.561 0 0.946 -0.055 1.155 -0.165c 0.308 -0.165 0.462 -0.495 0.462 -0.99c 0 -0.187 -0.011 -0.385 -0.044 -0.572c 0 -0.022 0 -0.055 -0.011 -0.099v -0.099c 0 -0.121 0.055 -0.176 0.165 -0.176c 0.11 0 0.176 0.099 0.198 0.308l 0.22 1.881c 0.033 0.308 -0.044 0.341 -0.341 0.341h -5.489c -0.253 0 -0.374 -0.011 -0.374 -0.264Z "/></symbol></defs></svg></span>.</li><li>A comprehension structure.</li></ul></body></details></section><footer></footer></article></div></body></html>
