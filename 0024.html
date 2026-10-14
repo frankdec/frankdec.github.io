@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><title></title><link rel="icon" href="/assets/favicon.ico" /><template id="theme-option-template"><input type="radio" name="theme" /><label></label></template><script src="/main.js"></script><!-- Also see: https://katex.org/docs/autorender -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+<!-- Also see: https://github.com/KaTeX/KaTeX/tree/main/contrib/copy-tex -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/copy-tex.min.js" integrity="sha384-Pe2JWbaShhSRT0SESJ9XLPeAsi4yrNi7r/CiH0Coq7giBjK5a6Ae7XcybE8rNlQP" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      trust: true,
+      strict: false,
+      throwOnError: false,
+      minRuleThickness: 0.05,
+    });
+  });
+</script>
+<link rel="stylesheet" href="/main.css"><style>
+@media only screen and (min-width: 1000px) {
+  #grid-wrapper { grid-template-columns: var(--article-max-width) var(--toc-max-width); }
+  nav#toc { max-width: 45ex; }
+}
+</style><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" rel="stylesheet">
+</head><body><header class="header"><nav class="nav"><div class="logo"><span class="cursor-pointer" onclick="window.location.href='/index.html'" title="My forest">« My forest</span></div></nav></header><div id="grid-wrapper" style="grid-template-areas: 'article toc';" data-base-url="/"><nav id="toc" class="sticky-nav mobile-sticky-nav"><div id="theme-options"></div></nav>
+
+<article><section class="block" data-taxon="Theorem"><details open><summary id="0024"><header><h1><span class="taxon">Theorem. </span> <a class="slug" href="/0024.html">[0024]</a></h1><div class="metadata"><ul><li class="meta-item"><span class="link local"><a href="/model-theory.html" title="Model Theory [model-theory]">Model Theory</a></span></li><li class="meta-item"><span class="link local"><a href="/todo.html" title="TODO [todo]">TODO</a></span></li></ul></div></header></summary><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><p>The limit <span class="typst-inline" style="vertical-align: -0.455em;"><svg style="overflow: visible; width: 6.117522222em; height: 1.2584em;" viewBox="0 0 67.292744444 13.8424" width="67.292744444pt" height="13.8424pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:h5="http://www.w3.org/1999/xhtml"><g transform="matrix(1 0 0 -1 0 8.371)"><use xlink:href="#gC45012E9777FA5A123D693620FE7C717" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 14.847555556 8.371)"><use xlink:href="#g4409E2CB062F4B2A6E5513C033F25B3C" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 26.461111111 8.25)"><use xlink:href="#g3F56A9914E4B7F38D38FE46D101E7357" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 35.624111111 13.442)"><use xlink:href="#gDA450581F906EC82789B340803450EC4" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 38.734911111 13.442)"><use xlink:href="#gBCC3F08F28F5569CC90781CCB563BE9D" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 44.725511111 13.442)"><use xlink:href="#gCE46D4B93A9C0C18B0ADE43F235A77E8" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 52.895944444 8.371)"><use xlink:href="#gC45012E9777FA5A123D693620FE7C717" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><g transform="matrix(1 0 0 -1 63.565944444 11.088)"><use xlink:href="#gDA450581F906EC82789B340803450EC4" x="0" y="0" fill="#000000" fill-rule="nonzero"/></g><defs><symbol id="gC45012E9777FA5A123D693620FE7C717" overflow="visible"><path d="M 0 0m 6.534 0.176c 0 -0.121 0.066 -0.176 0.209 -0.176l 1.353 0.033c 0.253 0.011 1.144 -0.033 1.353 -0.033c 0.165 0 0.253 0.088 0.253 0.264c 0 0.11 -0.11 0.165 -0.341 0.165c -0.451 0 -0.671 0.044 -0.671 0.143c 0 0.033 0.022 0.11 0.055 0.253l 1.452 5.797c 0.055 0.231 0.165 0.374 0.308 0.429c 0.066 0.022 0.264 0.033 0.583 0.033c 0.275 0 0.396 0.011 0.396 0.264c 0 0.11 -0.11 0.165 -0.341 0.165h -1.441c -0.319 0 -0.319 -0.022 -0.462 -0.231l -3.916 -6.094l -0.836 6.039c -0.044 0.275 -0.066 0.286 -0.385 0.286h -1.496c -0.242 0 -0.363 -0.011 -0.363 -0.253c 0 -0.121 0.121 -0.176 0.352 -0.176c 0.22 0 0.671 0.033 0.671 -0.143c 0 -0.022 -0.011 -0.088 -0.044 -0.198l -1.386 -5.533c -0.099 -0.418 -0.352 -0.671 -0.737 -0.748c -0.275 -0.033 -0.638 0.011 -0.638 -0.286c 0 -0.121 0.066 -0.176 0.198 -0.176c 0.198 0 0.891 0.033 1.089 0.033c 0.209 0 0.913 -0.033 1.122 -0.033c 0.165 0 0.242 0.088 0.242 0.264c 0 0.099 -0.077 0.154 -0.242 0.165c -0.462 0 -0.693 0.143 -0.693 0.429c 0 0.044 0.011 0.121 0.044 0.242l 1.43 5.731l 0.913 -6.545c 0.033 -0.187 0.099 -0.286 0.209 -0.286c 0.088 0 0.176 0.077 0.275 0.22l 4.279 6.677l -1.496 -5.995c -0.066 -0.242 -0.176 -0.385 -0.341 -0.44c -0.066 -0.022 -0.275 -0.033 -0.616 -0.033c -0.231 0 -0.341 -0.022 -0.341 -0.253Z "/></symbol><symbol id="g4409E2CB062F4B2A6E5513C033F25B3C" overflow="visible"><path d="M 0 0m 7.678 4.037h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.253c 0 -0.165 0.088 -0.253 0.264 -0.253h 6.798c 0.176 0 0.264 0.088 0.264 0.253c 0 0.132 -0.121 0.253 -0.264 0.253Z m 0 -2.068h -6.798c -0.176 0 -0.264 -0.088 -0.264 -0.253c 0 -0.165 0.088 -0.253 0.264 -0.253h 6.798c 0.176 0 0.264 0.088 0.264 0.253c 0 0.143 -0.121 0.253 -0.264 0.253Z "/></symbol><symbol id="g3F56A9914E4B7F38D38FE46D101E7357" overflow="visible"><path d="M 0 0m 4.587 -2.992c 1.023 0 1.936 0.286 2.728 0.869c 0.869 0.638 1.309 1.452 1.309 2.442v 7.568c 0 0.242 -0.121 0.363 -0.363 0.363c -0.231 0 -0.352 -0.121 -0.352 -0.363v -7.568c 0 -0.792 -0.363 -1.441 -1.1 -1.936c -0.649 -0.44 -1.397 -0.66 -2.222 -0.66c -0.825 0 -1.573 0.22 -2.222 0.66c -0.737 0.495 -1.1 1.144 -1.1 1.936v 7.568c 0 0.242 -0.121 0.363 -0.352 0.363c -0.242 0 -0.363 -0.121 -0.363 -0.363v -7.568c 0 -0.99 0.44 -1.804 1.309 -2.442c 0.792 -0.583 1.705 -0.869 2.728 -0.869Z "/></symbol><symbol id="gDA450581F906EC82789B340803450EC4" overflow="visible"><path d="M 0 0m 2.5025 4.7817c 0 0.1848 -0.1463 0.3234 -0.3311 0.3234c -0.231 0 -0.4543 -0.2156 -0.4543 -0.4466c 0 -0.1848 0.1463 -0.3234 0.3311 -0.3234c 0.231 0 0.4543 0.2156 0.4543 0.4466Z m -1.0241 -1.3629c -0.3619 0 -0.6468 -0.1848 -0.8547 -0.5544c -0.1771 -0.308 -0.2618 -0.5236 -0.2618 -0.6468c 0 -0.0847 0.0539 -0.1232 0.154 -0.1232c 0.0847 0 0.1386 0.0462 0.1694 0.1386c 0.1771 0.6083 0.4312 0.9086 0.77 0.9086c 0.1078 0 0.1617 -0.077 0.1617 -0.2387c 0 -0.1001 -0.077 -0.3465 -0.231 -0.7469l -0.4774 -1.2243c -0.0462 -0.1232 -0.0693 -0.231 -0.0693 -0.3311c 0 -0.4004 0.3465 -0.6776 0.7469 -0.6776c 0.3619 0 0.6391 0.1848 0.847 0.5621c 0.1771 0.308 0.2618 0.5159 0.2618 0.6314c 0 0.0847 -0.0539 0.1309 -0.154 0.1309c -0.0462 -0.0077 -0.1001 -0.0462 -0.154 -0.1232c -0.0077 -0.0077 -0.0154 -0.0231 -0.0154 -0.0308c -0.1771 -0.5929 -0.4312 -0.8932 -0.7623 -0.8932c -0.1078 0 -0.1617 0.077 -0.1617 0.231c 0 0.1155 0.0385 0.2772 0.1232 0.4774l 0.6083 1.5785c 0.0308 0.0847 0.0462 0.1694 0.0462 0.2541c 0 0.4004 -0.3465 0.6776 -0.7469 0.6776Z "/></symbol><symbol id="gBCC3F08F28F5569CC90781CCB563BE9D" overflow="visible"><path d="M 0 0m 5.1282 -0.3465c 0.1309 -0.0539 0.2695 0.0462 0.2695 0.1694c 0 0.077 -0.0385 0.1309 -0.1078 0.1617l -4.1118 1.9404l 4.1118 1.9404c 0.0693 0.0308 0.1078 0.0847 0.1078 0.154c 0 0.1309 -0.0616 0.1925 -0.1848 0.1925c -0.0308 0 -0.0616 -0.0077 -0.0847 -0.0154l -4.4198 -2.0944c -0.077 -0.0385 -0.1155 -0.0924 -0.1155 -0.1771c 0 -0.0847 0.0385 -0.1386 0.1155 -0.1771Z "/></symbol><symbol id="gCE46D4B93A9C0C18B0ADE43F235A77E8" overflow="visible"><path d="M 0 0m 1.9019 -0.077c 0.6006 0 1.1781 0.2079 1.7402 0.6237c 0.1463 -0.4158 0.4081 -0.6237 0.8008 -0.6237c 0.308 0 0.7469 0.2695 0.7469 0.5621c 0 0.077 -0.0539 0.1155 -0.1617 0.1155c -0.0847 0 -0.1309 -0.0308 -0.154 -0.0924c -0.077 -0.2079 -0.2156 -0.3157 -0.4081 -0.3157c -0.0385 0 -0.0693 0.0077 -0.0924 0.0231c -0.0847 0.0693 -0.1309 0.3542 -0.1463 0.8701c 0.2079 0.2156 0.385 0.4697 0.5467 0.7623c 0.2849 0.5159 0.4312 0.8624 0.4312 1.0549c 0 0.0847 -0.0539 0.1309 -0.1617 0.1309c -0.1155 -0.0154 -0.1617 -0.0462 -0.1848 -0.2156c -0.1232 -0.4543 -0.3388 -0.8778 -0.6545 -1.2859v 0.1155c -0.0154 0.2695 -0.0231 0.4312 -0.0308 0.4928c -0.1155 0.7161 -0.6622 1.2551 -1.4784 1.2551c -0.5621 0 -1.0626 -0.2156 -1.5246 -0.6468c -0.462 -0.4312 -0.693 -0.924 -0.693 -1.4784c 0 -0.7931 0.616 -1.3475 1.4245 -1.3475Z m -0.7315 1.0857c 0 0.5313 0.2541 1.232 0.4928 1.5477c 0.2926 0.3773 0.6314 0.5698 1.0241 0.5698c 0.4543 0 0.7315 -0.3465 0.8162 -1.0318c 0.0385 -0.5467 0.0616 -0.9625 0.0693 -1.2397c -0.5467 -0.4389 -1.0934 -0.6622 -1.6478 -0.6622c -0.4928 0 -0.7546 0.3234 -0.7546 0.8162Z "/></symbol></defs></svg></span> of an <span class="link local"><a href="/0023.html" title="Elementary chain [0023]">elementary chain</a></span> is an <span class="link local"><a href="/000F.html" title="Elementary embedding [000F]">elementary extension</a></span> of every member of the chain.</p></body></details></section><footer></footer></article></div></body></html>
